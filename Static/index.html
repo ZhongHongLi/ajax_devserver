@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script src="./ajax.js"></script>
+<script>
+    ajax({
+        type: 'get',
+        url: 'http://127.0.0.1:8000/first',
+        data: {
+            username: 'zs',
+            age: "20"
+        },
+        success: function(data) {
+            console.log(`这是请求成功的数据${data}`)
+        }
+    })
+</script>
+
+</html>
